@@ -1,8 +1,10 @@
-
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
-  )
-}
+    <div>
+      <h1>Explore the power of AI </h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, rem.</p>
+    </div>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
