@@ -1,7 +1,23 @@
+"use client";
+
+// cn library
 import { cn } from "@/lib/utils";
-import { CodeIcon, ImageIcon, LayoutDashboard, MessageSquare, MusicIcon, SettingsIcon, VideoIcon } from "lucide-react";
+
+// Lucid react icons
+import {
+  CodeIcon,
+  ImageIcon,
+  LayoutDashboard,
+  MessageSquare,
+  MusicIcon,
+  SettingsIcon,
+  VideoIcon,
+} from "lucide-react";
+
+// Next.js Components
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const routes = [
   {
@@ -49,6 +65,7 @@ const routes = [
 ];
 
 const SideBar = () => {
+  const pathName = usePathname();
   return (
     <div className=" space-y-4 p-4 flex flex-col h-full bg-gray-900 text-white">
       <div className="px-3 py-2 flex-1 ">
@@ -67,7 +84,12 @@ const SideBar = () => {
             <Link
               href={route.path}
               key={route.label}
-              className="text-sm p-3 w-full flex justify-start font-medium cursor-pointer rounded-lg hover:bg-gray-700"
+              className={cn(
+                "text-sm p-3 w-full flex justify-start font-medium cursor-pointer rounded-lg hover:bg-gray-700 transition",
+                pathName == route.path
+                  ? "text-white bg-gray-700"
+                  : "text-zinc-400"
+              )}
             >
               <div className="flex items-center  ">
                 <route.icon className={cn("h-5 w-5 mr-2", route.color)} />
@@ -76,7 +98,6 @@ const SideBar = () => {
             </Link>
           ))}
         </div>
-
       </div>
     </div>
   );
