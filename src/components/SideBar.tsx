@@ -27,7 +27,7 @@ const routes = [
     color: "text-sky-500",
   },
   {
-    label: "Conversation",
+    label: "conversation",
     icon: MessageSquare,
     path: "/conversation",
     color: "text-violet-500",
