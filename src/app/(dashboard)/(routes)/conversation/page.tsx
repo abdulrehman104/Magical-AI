@@ -19,7 +19,7 @@ const conversation = () => {
     resolver: zodResolver(firstSchema),
     defaultValues: {
       prompt: "",
-    },
+  },
   });
 
   const isLoading = form.formState.isSubmitting;
