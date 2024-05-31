@@ -15,7 +15,7 @@ import { Card } from "@/components/ui/card";
 
 import { firstSchema } from "./constants";
 
-const conversation = () => {
+const ImageGeneration = () => {
   const form = useForm<z.infer<typeof firstSchema>>({
     resolver: zodResolver(firstSchema),
     defaultValues: {
@@ -75,4 +75,4 @@ const conversation = () => {
   );
 };
 
-export default conversation;
+export default ImageGeneration;

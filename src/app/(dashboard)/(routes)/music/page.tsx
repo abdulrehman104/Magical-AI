@@ -15,7 +15,7 @@ import { MusicIcon } from "lucide-react";
 
 import { firstSchema } from "./constants";
 
-const conversation = () => {
+const MusicGeneration = () => {
   const form = useForm<z.infer<typeof firstSchema>>({
     resolver: zodResolver(firstSchema),
     defaultValues: {
@@ -75,4 +75,4 @@ const conversation = () => {
   );
 };
 
-export default conversation;
+export default MusicGeneration;

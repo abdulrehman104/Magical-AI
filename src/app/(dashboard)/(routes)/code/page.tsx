@@ -14,7 +14,7 @@ import { Card } from "@/components/ui/card";
 import { firstSchema } from "./constants";
 import { CodeIcon } from "lucide-react";
 
-const conversation = () => {
+const CodeGeneration = () => {
   const form = useForm<z.infer<typeof firstSchema>>({
     resolver: zodResolver(firstSchema),
     defaultValues: {
@@ -74,4 +74,4 @@ const conversation = () => {
   );
 };
 
-export default conversation;
+export default CodeGeneration;
