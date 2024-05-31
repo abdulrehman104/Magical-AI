@@ -71,11 +71,11 @@ const SideBar = () => {
       <div className="px-3 py-2 flex-1 ">
         <Link href="/dashboard" className="flex items-center mb-14">
           <Image
-            src="/logo.png"
+            src="/logo.jpg"
             alt="Logo"
             width={40}
             height={40}
-            className="rounded-lg mr-4"
+            className="rounded-full mr-4"
           />
           <h1 className="text-2xl font-bold">Logo</h1>
         </Link>

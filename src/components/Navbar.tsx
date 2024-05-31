@@ -11,7 +11,7 @@ const Navbar = () => {
       <MobileSidebar />
       <div className="w-full flex justify-end ">
         <Image
-          src="/logo.png"
+          src="/logo.jpg"
           alt="User"
           width={30}
           height={30}
